@@ -1,0 +1,1086 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        /* html,
+        body {
+            position: relative;
+            height: 100%;
+        } */
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes zoomEase {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-zoomEase {
+            animation: zoomEase 4s ease-out forwards;
+        }
+    </style>
+    <style>
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .s-s {
+            text-align: center;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            color: #fff;
+        }
+    </style>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ss-4 {
+            position: relative;
+            height: 50vh;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+        }
+
+        .swiper-4 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .s-4 {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            
+        }
+
+        .s-4 img {
+            display: block;
+            width: 75%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="h-screen w-full ">
+        <div class="h-[22%] w-full ">
+            <div class="h-[35%] w-full  flex justify-between border-b border-[#65676b]">
+                <div class=" h-full w-[50%] flex ">
+                    <div class="w-[35%] text-[#65676b]  flex justify-end items-center p-4">
+                        <div class="text-sm"><i class="fa-solid fa-phone-flip"></i>
+                            +12505550199</div>
+                        <div></div>
+                    </div>
+                    <div class="w-[65%] text-[#65676b]  flex justify-start  items-center p-4">
+                        <div class="text-sm"><i class="fa-solid fa-envelope"></i>
+                            moonlit@gmail.com
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class=""></div>
+                </div>
+                <div class="text-[#65676b] h-full w-[50%] flex justify-center items-center ">
+                    <i class="fa-solid fa-location-dot p-3"></i>
+                    <p class="text-sm">280 Augusta Avenue, M5T 2L9 Toronto, Canada</p>
+                </div>
+            </div>
+            <div class="h-[65%] flex justify-evenly">
+                <div class="w-[35%]  flex p-2 justify-a items-center">
+                    <div class="w-[18%]  ">
+                        <a href="" class="flex items-center justify-center space-x-1 text-[#65676b]"><span>Home</span>
+                            <i class="fa-solid fa-angle-down pt-0.5"></i></a>
+                    </div>
+                    <div class="w-[18%] ">
+                        <a href="" class="flex items-center justify-center space-x-1 text-[#65676b]"><span>Rooms</span>
+                            <i class="fa-solid fa-angle-down pt-0.5"></i></a>
+                    </div>
+                    <div class="w-[18%] ">
+                        <a href="" class="flex items-center justify-center space-x-1 text-[#65676b]"><span>Pages</span>
+                            <i class="fa-solid fa-angle-down pt-0.5"></i></a>
+                    </div>
+                    <div class="w-[18%] ">
+                        <a href="" class="flex items-center justify-center space-x-1 text-[#65676b]"><span>Blog</span>
+                            <i class="fa-solid fa-angle-down pt-0.5"></i></a>
+                    </div>
+                    <div class="w-[18%]">
+                        <a href="" class="text-[#65676b]">Contact</a>
+                    </div>
+                </div>
+                <div class="w-[20%]  flex justify-center items-center">
+                    <img src="https://moonlit-nextjs.netlify.app/assets/images/logo/logo.svg" alt="">
+                </div>
+                <div class="w-[35%] flex  gap-8 items-center">
+                    <button class="border-1 border-[#65676b] w-25 h-10 rounded-md text-[#65676b]">Sign In</button>
+                    <button class="border-1 border-[#65676b] w-25 h-10 rounded-md text-[#65676b]">Sign Up</button>
+                    <button class=" w-25 bg-orange-300 h-10 rounded-md text-white">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="h-[140%] w-full ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <img class="w-[100%] h-[100%] object-cover animate-zoomEase "
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="absolute h-200 w-250  opacity-100 text-white pt-30">
+                            <div class="h-15 w-[100%]  flex items-center justify-center">
+                                <div class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 ">
+                                </div>
+                                <div>
+                                    <h3 class="text-white text-xl">Welcome to Our Hotel</h3>
+                                </div>
+                                <div
+                                    class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 rotate-180">
+                                </div>
+                            </div>
+                            <div class="h-90  flex justify-center items-center">
+                                <h1 class="text-8xl font-serif">Luxury Stay Hotel <br>
+                                    Experience Comfort &<br>
+                                    Elegance</h1>
+                            </div>
+                            <div class="h-30  flex justify-center items-center">
+                                <h2>Chossing Booking was one of the best decision we've ever made<br>
+                                    have proven to be a reliable and innovative partner</h2>
+                            </div>
+                            <div class="h-15  flex justify-center items-center"> <button
+                                    class=" w-40 bg-orange-300 h-10 rounded-md text-white pb-1">Discover Room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-[100%] h-[100%] object-cover animate-zoomEase"
+                            src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="absolute h-200 w-250  opacity-100 text-white pt-30">
+                            <div class="h-15 w-[100%]  flex items-center justify-center">
+                                <div class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 ">
+                                </div>
+                                <div>
+                                    <h3 class="text-white text-xl">Welcome to Our Hotel</h3>
+                                </div>
+                                <div
+                                    class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 rotate-180">
+                                </div>
+                            </div>
+                            <div class="h-90  flex justify-center items-center">
+                                <h1 class="text-8xl font-serif">Luxury Stay Hotel <br>
+                                    Experience Comfort &<br>
+                                    Elegance</h1>
+                            </div>
+                            <div class="h-30  flex justify-center items-center">
+                                <h2>Chossing Booking was one of the best decision we've ever made<br>
+                                    have proven to be a reliable and innovative partner</h2>
+                            </div>
+                            <div class="h-15  flex justify-center items-center"> <button
+                                    class=" w-40 bg-orange-300 h-10 rounded-md text-white pb-1">Discover Room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-[100%] h-[100%] object-cover animate-zoomEase"
+                            src="https://images.unsplash.com/photo-1559841771-599b6eeaca62?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="absolute h-200 w-250  opacity-100 text-white pt-30">
+                            <div class="h-15 w-[100%]  flex items-center justify-center">
+                                <div class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 ">
+                                </div>
+                                <div>
+                                    <h3 class="text-white text-xl">Welcome to Our Hotel</h3>
+                                </div>
+                                <div
+                                    class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 rotate-180">
+                                </div>
+                            </div>
+                            <div class="h-90  flex justify-center items-center">
+                                <h1 class="text-8xl font-serif">Luxury Stay Hotel <br>
+                                    Experience Comfort &<br>
+                                    Elegance</h1>
+                            </div>
+                            <div class="h-30  flex justify-center items-center">
+                                <h2>Chossing Booking was one of the best decision we've ever made<br>
+                                    have proven to be a reliable and innovative partner</h2>
+                            </div>
+                            <div class="h-15  flex justify-center items-center"> <button
+                                    class=" w-40 bg-orange-300 h-10 rounded-md text-white pb-1">Discover Room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-[100%] h-[100%] object-cover animate-zoomEase"
+                            src="https://images.unsplash.com/photo-1657349226767-66c983d7df39?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="absolute h-200 w-250  opacity-100 text-white pt-30">
+                            <div class="h-15 w-[100%]  flex items-center justify-center">
+                                <div class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 ">
+                                </div>
+                                <div>
+                                    <h3 class="text-white text-xl">Welcome to Our Hotel</h3>
+                                </div>
+                                <div
+                                    class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 rotate-180">
+                                </div>
+                            </div>
+                            <div class="h-90  flex justify-center items-center">
+                                <h1 class="text-8xl font-serif">Luxury Stay Hotel <br>
+                                    Experience Comfort &<br>
+                                    Elegance</h1>
+                            </div>
+                            <div class="h-30  flex justify-center items-center">
+                                <h2>Chossing Booking was one of the best decision we've ever made<br>
+                                    have proven to be a reliable and innovative partner</h2>
+                            </div>
+                            <div class="h-15  flex justify-center items-center"> <button
+                                    class=" w-40 bg-orange-300 h-10 rounded-md text-white pb-1">Discover Room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-[100%] h-[100%] object-cover animate-zoomEase"
+                            src="https://images.unsplash.com/photo-1625244695851-1fc873f942bc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="absolute h-200 w-250  opacity-100 text-white pt-30">
+                            <div class="h-15 w-[100%]  flex items-center justify-center">
+                                <div class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 ">
+                                </div>
+                                <div>
+                                    <h3 class="text-white text-xl">Welcome to Our Hotel</h3>
+                                </div>
+                                <div
+                                    class="h-15 w-35  bg-[url('1.png')] bg-center bg-contain bg-no-repeat mt-2 mb-2 rotate-180">
+                                </div>
+                            </div>
+                            <div class="h-90  flex justify-center items-center">
+                                <h1 class="text-8xl font-serif">Luxury Stay Hotel <br>
+                                    Experience Comfort &<br>
+                                    Elegance</h1>
+                            </div>
+                            <div class="h-30  flex justify-center items-center">
+                                <h2>Chossing Booking was one of the best decision we've ever made<br>
+                                    have proven to be a reliable and innovative partner</h2>
+                            </div>
+                            <div class="h-15  flex justify-center items-center"> <button
+                                    class=" w-40 bg-orange-300 h-10 rounded-md text-white pb-1">Discover Room</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="h-[140%] w-[100%] flex justify-center flex-col items-center">
+            <div
+                class="relative z-1 -top-15 h-[15%] w-[90%] bg-white border-1 border-gray-400 shadow-2xl rounded-3xl flex p-6.5">
+                <div class="w-[20%] h-[100%]  flex flex-col pl-5 pr-0 border-r border-r-[#65676b] ">
+                    <div class=" h-[50%] w-[100%]">
+                        <h1 class="text-2xl  font-serif font-light">Check In</h1>
+                    </div>
+                    <div class="h-[60%] w-[100%] bg-white pt-2 gap-4">
+                        <!-- <i class="fa-solid fa-calendar-days "></i> -->
+                        <input type="date" placeholder="Select date">
+                    </div>
+                </div>
+                <div class="w-[20%] h-[100%] flex flex-col pl-5 pr-0 border-r border-r-[#65676b]">
+                    <div class=" h-[50%] w-[100%]">
+                        <h1 class="text-2xl  font-serif font-light">Check Out</h1>
+                    </div>
+                    <div class="h-[60%] w-[100%] bg-white pt-2 gap-4">
+                        <!-- <i class="fa-solid fa-calendar-days "></i> -->
+                        <input type="date" placeholder="Select date">
+                    </div>
+                </div>
+                <div class="w-[20%] h-[100%] flex flex-col pl-5 pr-4 border-r border-r-[#65676b]">
+                    <div class=" h-[50%] w-[100%]">
+                        <h1 class="text-2xl  font-serif font-light">Adult</h1>
+                    </div>
+                    <div class="h-[60%] w-[100%] bg-white gap-4">
+                        <!-- <i class="fa-solid fa-calendar-days "></i> -->
+                        <select id="options" class="w-full h-[100%] border-none">
+                            <option value="">Select an option</option>
+                            <option value="profile">Profile</option>
+                            <option value="settings">Settings</option>
+                            <option value="logout">Logout</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-[20%] h-[100%] flex flex-col pl-5 pr-4 border-r border-r-[#65676b]">
+                    <div class=" h-[50%] w-[100%]">
+                        <h1 class="text-2xl  font-serif font-light">Child</h1>
+                    </div>
+                    <div class="h-[60%] w-[100%] bg-white gap-4">
+                        <!-- <i class="fa-solid fa-calendar-days "></i> -->
+                        <select id="options" class="w-full h-[100%] border-none">
+                            <option value="">Select an option</option>
+                            <option value="child1">1 child </option>
+                            <option value="child2">2 child</option>
+                            <option value="child3">3 child</option>
+                            <option value="child4">4 child</option>
+                            <option value="child5">5 child</option>
+                            <option value="child6">6 child</option>
+                            <option value="child7">7 child</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-[20%] h-[100%]  flex justify-center items-center">
+                    <button class=" w-35 bg-orange-300 h-12 rounded-md text-white">Check Now</button>
+                </div>
+            </div>
+            <div class="h-[100%] w-[100%] flex  justify-evenly items-center p-5">
+                <div class="h-[95%] w-[40%]  p-4">
+                    <div class="h-[10%] w-[100%]  object-cover gap-5 flex flex-row justify-start items-center">
+                        <img class="h-15 w-25  rotate-180" src="2.png" alt="">
+                        <h1 class="text-[#65676b] text-lg font-serif ">About Us</h1>
+                    </div>
+                    <div class="h-[40%]  pt-7">
+                        <h1 class="text-6xl font-serif">Welcome To Our Moonlit Hotel & Resort</h1>
+                    </div>
+                    <div class="h-[30%]  pt-3  flex justify-center items-center ">
+                        <p class="text-base text-justify">Welcome to Bokinn, where luxury meets comfort in the heart of
+                            canada. Since 1999, we have been dedicated to providing an exceptional stay for our guests,
+                            blending modern amenities with timeless elegance.Our beautifully designed rooms and suites
+                            offer stunning views and plush accommodations, ensuring a restful retreat whether you're
+                            here for business or leisure.</p>
+                    </div>
+                    <button class=" w-35 bg-orange-300 h-13 mt-10 rounded-md text-white">Learn More</button>
+                </div>
+                <div class="h-[80%] w-[35%] bg-orange-200 rounded-3xl">
+                    <div
+                        class="h-28 w-55 bg-white absolute translate-y-30 right-8 rounded-3xl flex border-1 border-gray-400 shadow-2xl ">
+                        <div class="w-[30%] h-[100%]  flex justify-center items-center rounded-3xl ">
+                            <i class="fa-solid fa-people-roof text-5xl pl-4 "></i>
+                        </div>
+                        <div class="w-[70%] h-[100%] flex flex-col justify-center p-4 ">
+                            <h1 class="text-3xl">50+</h1>
+                            <p class="text-base">Experience Staff</p>
+                        </div>
+                    </div>
+                    <img class="h-[100%] w-[100%] object-cover rounded-3xl"
+                        src="https://moonlit-nextjs.netlify.app/assets/images/about/about-1.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="h-[120%] w-[100%] bg-gray-100 ">
+            <div class="h-[20%] w-[100%]  flex justify-center items-end">
+                <img class="h-[30%] w-[5%] " src="2.png" alt="">
+                <h1 class="text-2xl text-[#ab8a62] font-serif pl-4 pr-4">Facilities</h1>
+                <img class="h-[30%] w-[5%]  rotate-180" src="2.png" alt="">
+            </div>
+            <div class="h-[20%] w-[100%]  flex justify-center items-center">
+                <h1 class="text-5xl  font-serif pl-4 pr-4"> Hotel Facilities</h1>
+            </div>
+            <div class="h-[50%] w-[100%]  p-4 pl-15 flex justify-evenly items-center">
+                <div class="h-[90%] w-[20%] bg-white  p-5 flex justify-center items-center flex-col rounded-2xl">
+                    <div class="h-[30%]  flex justify-center items-center">
+                        <img src="https://moonlit-nextjs.netlify.app/assets/images/icon/bed.svg" alt="">
+                    </div>
+                    <div class="h-[20%]  flex justify-center items-center">
+                        <h1 class="text-lg font-serif">Rooms and Suites</h1>
+                    </div>
+                    <div class="h-[40%]  flex justify-center items-center ">
+                        <p class="text-center">Varied types of rooms, from standard to luxury suites, equipped with
+                            essentials like beds.</p>
+                    </div>
+                </div>
+                <div class="h-[90%] w-[20%] bg-white   p-5 flex justify-center items-center flex-col rounded-2xl">
+                    <div class="h-[30%]  flex justify-center items-center">
+                        <img src="https://moonlit-nextjs.netlify.app/assets/images/icon/security.svg" alt="">
+                    </div>
+                    <div class="h-[20%]  flex justify-center items-center ">
+                        <h1 class="text-lg font-serif">24-Hour Security</h1>
+                    </div>
+                    <div class="h-[40%]  flex justify-center items-center ">
+                        <p class="text-center pt-5">On-site security personnel and best surveillance. from standard to
+                            luxury suites,Secure storage for valuables.</p>
+                    </div>
+                </div>
+                <div class="h-[90%] w-[20%] bg-white   p-5 flex justify-center items-center flex-col rounded-2xl">
+                    <div class="h-[30%]  flex justify-center items-center">
+                        <img src="https://moonlit-nextjs.netlify.app/assets/images/icon/gym.svg" alt="">
+                    </div>
+                    <div class="h-[20%]  flex justify-center items-center">
+                        <h1 class="text-lg font-serif">Fitness Center</h1>
+                    </div>
+                    <div class="h-[40%]  flex justify-center items-center ">
+                        <p class="text-center">Equipped with exercise machines and weights.Offering massages, facials,
+                            and other treatments.</p>
+                    </div>
+                </div>
+                <div class="h-[90%] w-[20%] bg-white   p-5 flex justify-center items-center flex-col rounded-2xl">
+                    <div class="h-[30%]  flex justify-center items-center">
+                        <img src="https://moonlit-nextjs.netlify.app/assets/images/icon/swimming-pool.svg" alt="">
+                    </div>
+                    <div class="h-[20%]  flex justify-center items-center">
+                        <h1 class="text-lg font-serif">Swimming Pool</h1>
+                    </div>
+                    <div class="h-[40%]  flex justify-center items-center ">
+                        <p class="text-center">Indoor or outdoor pools for leisure or exercise.Offering massages,
+                            facials, and other treatments</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="h-[150%] w-[100%]  p-5 pl-25 pr-25">
+            <div class="h-[25%] w-[100%] flex">
+                <div class="h-[100%] w-[40%]">
+                    <div class="h-[50%]  pt-6 flex items-end ">
+                        <img class="h-[70%] w-[20%]  rotate-180 mb-2" src="2.png" alt="">
+                        <h1 class="pb-5 text-2xl text-[#ab8a62]">Rooms</h1>
+                    </div>
+                    <div class="h-[30%]  flex justify-start p-5 items-center text-6xl font-serif">
+                        <h1>Our Rooms</h1>
+                    </div>
+                </div>
+                <div class="h-[100%] w-[60%]  pt-20">
+                    <p class="text-lg text-justify">Our rooms offer a harmonious blend of comfort and elegance, designed
+                        to provide an exceptional stay for every guest. Each room features plush bedding, high-quality
+                        linens, and a selection of pillows to ensure a restful night's sleep.</p>
+                </div>
+            </div>
+            <div class="h-[75%] w-[100%]">
+                <!-- Bottom slider -->
+                <div class="swiper mySwiperBottom h-full w-full main ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide s-s pb-10 ">
+                            <div class="h-[35%] w-[100%] absolute  flex top-90 p-7 flex flex-col ">
+                                <h1 class="text-3xl font-serif text-start">The Ritz-Carlton</h1>
+                                <div class="h-[40%] w-[100%]  flex gap-5">
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-house text-sm"></i>
+                                        <h3 class="text-lg ">35 sqm</h3>
+                                    </div>
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-user text-sm"></i>
+                                        <h3 class="text-lg ">2 Person</h3>
+                                    </div>
+                                </div>
+                                <h1 class=" text-start text-5xl font-serif">100$</h1>
+                            </div>
+                            <img class="overflow-hidden rounded-2xl"
+                                src="https://images.unsplash.com/photo-1556702571-3e11dd2b1a92?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide s-s pb-10 ">
+                            <div class="h-[35%] w-[100%] absolute  flex top-90 p-7 flex flex-col ">
+                                <h1 class="text-3xl font-serif text-start">The Ritz-Carlton</h1>
+                                <div class="h-[40%] w-[100%]  flex gap-5">
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-house text-sm"></i>
+                                        <h3 class="text-lg ">35 sqm</h3>
+                                    </div>
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-user text-sm"></i>
+                                        <h3 class="text-lg ">2 Person</h3>
+                                    </div>
+                                </div>
+                                <h1 class=" text-start text-5xl font-serif">100$</h1>
+                            </div>
+                            <img class="rounded-2xl"
+                                src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide s-s pb-10 ">
+                            <div class="h-[35%] w-[100%] absolute  flex top-90 p-7 flex flex-col ">
+                                <h1 class="text-3xl font-serif text-start">The Ritz-Carlton</h1>
+                                <div class="h-[40%] w-[100%]  flex gap-5">
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-house text-sm"></i>
+                                        <h3 class="text-lg ">35 sqm</h3>
+                                    </div>
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-user text-sm"></i>
+                                        <h3 class="text-lg ">2 Person</h3>
+                                    </div>
+                                </div>
+                                <h1 class=" text-start text-5xl font-serif">100$</h1>
+                            </div>
+                            <img class="rounded-2xl"
+                                src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide s-s pb-10 ">
+                            <div class="h-[35%] w-[100%] absolute  flex top-90 p-7 flex flex-col ">
+                                <h1 class="text-3xl font-serif text-start">The Ritz-Carlton</h1>
+                                <div class="h-[40%] w-[100%]  flex gap-5">
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-house text-sm"></i>
+                                        <h3 class="text-lg ">35 sqm</h3>
+                                    </div>
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-user text-sm"></i>
+                                        <h3 class="text-lg ">2 Person</h3>
+                                    </div>
+                                </div>
+                                <h1 class=" text-start text-5xl font-serif">100$</h1>
+                            </div>
+                            <img class="rounded-2xl"
+                                src="https://plus.unsplash.com/premium_photo-1681113076872-c74b8926e70c?q=80&w=461&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide s-s pb-10 ">
+                            <div class="h-[35%] w-[100%] absolute  flex top-90 p-7 flex flex-col ">
+                                <h1 class="text-3xl font-serif text-start">The Ritz-Carlton</h1>
+                                <div class="h-[40%] w-[100%]  flex gap-5">
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-house text-sm"></i>
+                                        <h3 class="text-lg ">35 sqm</h3>
+                                    </div>
+                                    <div class=" h-[100%] w-[30%]  flex justify-center items-center gap-2">
+                                        <i class="fa-solid fa-user text-sm"></i>
+                                        <h3 class="text-lg ">2 Person</h3>
+                                    </div>
+                                </div>
+                                <h1 class=" text-start text-5xl font-serif">100$</h1>
+                            </div>
+                            <img class="rounded-2xl"
+                                src="https://images.unsplash.com/photo-1585128792020-803d29415281?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination s-p"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="h-[120%] w-[100%] bg-[#f1f1f1] flex justify-center items-center flex-col mt-10">
+            <div class="h-[40%] w-[100%]  flex flex-col justify-center items-center">
+                <div class="h-[45%] w-[100%]  flex justify-center items-end">
+                    <div class="h-[50%] w-[100%] flex justify-center items-end">
+                        <img class="h-[70%] w-[5%]" src="2.png" alt="">
+                        <h1 class="text-3xl font-serif pb-1.5">Testimonial</h1>
+                        <img class="h-[70%] w-[5%] rotate-180" src="2.png" alt="">
+                    </div>
+                </div>
+                <div class="h-[55%] w-[50%]  flex justify-center items-center">
+                    <h1 class="text-center text-6xl font-serif">What Our Client <br>Say</h1>
+                </div>
+            </div>
+            <div class="h-[60%] w-[90%] ">
+                <div class="swiper mySwiperthird">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide  flex flex-col justify-center items-center">
+                            <div class="h-[25%] w-[20%] p-4 ">
+                                <img class="h-[10%] w-[50%]" src="pic.png" alt="">
+                            </div>
+                            <div class="h-[80%] w-[100%] flex flex-col justify-center items-center">
+                                <div
+                                    class="h-[60%] w-[100%]  p-4 pl-20 pr-20 text-2xl text-justify flex justify-center items-center text-[#65676b]">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed voluptas cum
+                                        esse adipisci,
+                                        vel expedita deleniti aspernatur ipsam? Est eveniet tempora quod modi! Eos
+                                        libero velit nisi
+                                        facilis eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                                        recusandae officia lorem. </h1>
+                                </div>
+                                <div class="h-[40%] w-[60%]  flex justify-center items-center">
+                                    <div class="h-[55%] w-[9%] ">
+                                        <img class=" rounded-4xl"
+                                            src="https://moonlit-nextjs.netlify.app/assets/images/author/author-1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="h-[52%] w-[30%] pl-5 flex flex-col justify-start">
+                                        <h1 class=" text-start text-2xl font-serif">Sarah Maxwel</h1>
+                                        <p class="text-start text-[#65676b]">COO of Apex Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  flex flex-col justify-center items-center">
+                            <div class="h-[25%] w-[20%] p-4 ">
+                                <img class="h-[10%] w-[50%]" src="pic.png" alt="">
+                            </div>
+                            <div class="h-[80%] w-[100%] flex flex-col justify-center items-center">
+                                <div
+                                    class="h-[60%] w-[100%]  p-4 pl-20 pr-20 text-2xl text-justify flex justify-center items-center text-[#65676b]">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed voluptas cum
+                                        esse adipisci,
+                                        vel expedita deleniti aspernatur ipsam? Est eveniet tempora quod modi! Eos
+                                        libero velit nisi
+                                        facilis eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                                        recusandae officia lorem. </h1>
+                                </div>
+                                <div class="h-[40%] w-[60%]  flex justify-center items-center">
+                                    <div class="h-[55%] w-[9%] ">
+                                        <img class=" rounded-4xl"
+                                            src="https://moonlit-nextjs.netlify.app/assets/images/author/author-1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="h-[52%] w-[30%] pl-5 flex flex-col justify-start">
+                                        <h1 class=" text-start text-2xl font-serif">Sarah Maxwel</h1>
+                                        <p class="text-start text-[#65676b]">COO of Apex Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  flex flex-col justify-center items-center">
+                            <div class="h-[25%] w-[20%] p-4 ">
+                                <img class="h-[10%] w-[50%]" src="pic.png" alt="">
+                            </div>
+                            <div class="h-[80%] w-[100%] flex flex-col justify-center items-center">
+                                <div
+                                    class="h-[60%] w-[100%]  p-4 pl-20 pr-20 text-2xl text-justify flex justify-center items-center text-[#65676b]">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed voluptas cum
+                                        esse adipisci,
+                                        vel expedita deleniti aspernatur ipsam? Est eveniet tempora quod modi! Eos
+                                        libero velit nisi
+                                        facilis eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                                        recusandae officia lorem. </h1>
+                                </div>
+                                <div class="h-[40%] w-[60%]  flex justify-center items-center">
+                                    <div class="h-[55%] w-[9%] ">
+                                        <img class=" rounded-4xl"
+                                            src="https://moonlit-nextjs.netlify.app/assets/images/author/author-1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="h-[52%] w-[30%] pl-5 flex flex-col justify-start">
+                                        <h1 class=" text-start text-2xl font-serif">Sarah Maxwel</h1>
+                                        <p class="text-start text-[#65676b]">COO of Apex Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  flex flex-col justify-center items-center">
+                            <div class="h-[25%] w-[20%] p-4 ">
+                                <img class="h-[10%] w-[50%]" src="pic.png" alt="">
+                            </div>
+                            <div class="h-[80%] w-[100%] flex flex-col justify-center items-center">
+                                <div
+                                    class="h-[60%] w-[100%]  p-4 pl-20 pr-20 text-2xl text-justify flex justify-center items-center text-[#65676b]">
+                                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed voluptas cum
+                                        esse adipisci,
+                                        vel expedita deleniti aspernatur ipsam? Est eveniet tempora quod modi! Eos
+                                        libero velit nisi
+                                        facilis eveniet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+                                        recusandae officia lorem. </h1>
+                                </div>
+                                <div class="h-[40%] w-[60%]  flex justify-center items-center">
+                                    <div class="h-[55%] w-[9%] ">
+                                        <img class=" rounded-4xl"
+                                            src="https://moonlit-nextjs.netlify.app/assets/images/author/author-1.png"
+                                            alt="">
+                                    </div>
+                                    <div class="h-[52%] w-[30%] pl-5 flex flex-col justify-start">
+                                        <h1 class=" text-start text-2xl font-serif">Sarah Maxwel</h1>
+                                        <p class="text-start text-[#65676b]">COO of Apex Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next "></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="h-[150%] w-[100%]   flex justify-center items-center p-4">
+            <img class="w-[85%] rounded-2xl"
+                src="https://images.unsplash.com/photo-1595526051245-4506e0005bd0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+        </div>
+        <div class="h-[150%] w-[100%] ">
+            <div class="h-[25%] w-[100%]  pl-29 pr-30 flex ">
+                <div class="h-[100%] w-[40%]  flex justify-end items-center flex-col gap-2">
+                    <div class="h-[30%] w-[100%]  flex justify-start items-center">
+                        <img class="h-[100%] w-[25%] rotate-180" src="2.png" alt="">
+                        <h2 class="text-2xl">Special Offer</h2>
+                    </div>
+                    <div class="h-[50%] w-[100%]  flex justify-center items-center">
+                        <h1 class="text-[5vw] font-serif text-center">Special Offer</h1>
+                    </div>
+                </div>
+                <div class="h-[100%] w-[70%]  p-10 flex justify-center items-center">
+                    <p class="text-justify text-lg text-[#65676b] pt-15">Experience the ultimate in luxury and
+                        relaxation with our exclusive special offer! Book your stay now and enjoy 20% off our best
+                        available rates.</p>
+                </div>
+            </div>
+            <div class="h-[75%] w-[100%]  pl-25 pr-25  ">
+                <div class="h-[50%] w-[100%]  flex">
+                    <div class="h-[100%] w-[50%]  p-4 flex">
+                        <img class="h-[100%] w-[55%] rounded-2xl"
+                            src="https://moonlit-nextjs.netlify.app/assets/images/offer/1.webp" alt="">
+                        <div class="h-[100%] w-[44%]  flex flex-col p-4">
+                            <h1 class="text-[1.5vw] font-serif ">Family Fun Package</h1>
+                            <div class="h-[70%] w-[100%]  flex flex-col ">
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">15% off on family suites</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Free meals for kids under 12</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Complimentary tickets</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">The local amusement park
+                                    </h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Daily family-friendly activities</h1>
+                                </div>
+                            </div>
+                            <div class="h-[30%] flex justify-start items-center ">
+                                <a href="#" class="border-b text-[#65676b]">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[100%] w-[50%]  p-4 flex">
+                        <img class="h-[100%] w-[55%] rounded-2xl"
+                            src="https://moonlit-nextjs.netlify.app/assets/images/offer/2.webp" alt="">
+                        <div class="h-[100%] w-[44%]  flex flex-col p-4">
+                            <h1 class="text-[1.5vw] font-serif ">Spa Retreat</h1>
+                            <div class="h-[70%] w-[100%]  flex flex-col ">
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">A two-night stay in a premium room</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Daily spa treatments</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Healthy breakfast and lunch options</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Access to all spa facilities
+                                    </h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">25% off for stays of 7 nights or more
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="h-[30%] flex justify-start items-center ">
+                                <a href="#" class="border-b text-[#65676b]">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[50%] w-[100%]  flex">
+                    <div class="h-[100%] w-[50%]  p-4 flex">
+                        <img class="h-[100%] w-[55%] rounded-2xl"
+                            src="https://moonlit-nextjs.netlify.app/assets/images/offer/3.webp" alt="">
+                        <div class="h-[100%] w-[44%]  flex flex-col p-4">
+                            <h1 class="text-[1.5vw] font-serif ">Business Traveler Special</h1>
+                            <div class="h-[70%] w-[100%]  flex flex-col">
+                                <div class="h-[20%] flex justify-start items-center  pb-2  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">10% off on executive rooms</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center pb-2 "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Complimentary high-speed Wi-Fi</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  pb-2"><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Access to the business lounge</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  pb-2"><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Free airport shuttle service
+                                    </h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center pb-2  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Daily family-friendly activities</h1>
+                                </div>
+                            </div>
+                            <div class="h-[30%] flex justify-start items-center ">
+                                <a href="#" class="border-b text-[#65676b]">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[100%] w-[50%]  p-4 flex">
+                        <img class="h-[100%] w-[55%] rounded-2xl"
+                            src="https://moonlit-nextjs.netlify.app/assets/images/offer/4.webp" alt="">
+                        <div class="h-[100%] w-[44%]  flex flex-col p-4">
+                            <h1 class="text-[1.5vw] font-serif ">Romantic Getaway</h1>
+                            <div class="h-[70%] w-[100%]  flex flex-col ">
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">A two-night stay in a deluxe suite</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">A bottle of champagne and chocolates</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Romantic dinner for two</h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check  "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Couples massage at our spa
+                                    </h1>
+                                </div>
+                                <div class="h-[20%] flex justify-start items-center  "><i
+                                        class="fa-solid fa-circle-check "></i>
+                                    <h1 class="text-[1vw] pl-3 text-[#65676b]">Couples massage at our spa</h1>
+                                </div>
+                            </div>
+                            <div class="h-[30%] flex justify-start items-center ">
+                                <a href="#" class="border-b text-[#65676b]">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="h-[100%] w-[100%] ">
+            <div class="h-[40%] w-[100%]  flex justify-center items-center flex-col pt-10">
+                <div class="h-[30%] w-[40%]  flex justify-center items-center">
+                    <img class="h-[100%] w-[15%]  text-center" src="2.png" alt="">
+                    <h1 class="text-2xl font-serif">Gallery</h1>
+                    <img class="h-[100%] w-[15%] rotate-180 text-center" src="2.png" alt="">
+                </div>
+                <div class="h-[50%] w-[40%]  flex justify-center items-center">
+                    <h1 class="text-6xl font-serif">Our Gallery</h1>
+                </div>
+            </div>
+            <div class="h-[60%] w-[100%] flex justify-around pl-20 pr-20 pt-7 pb-7 ">
+                <div class="ss-4">
+                    <div class="swiper mySwiperfour swiper-4 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide s-4 ">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/1.webp" alt="">
+                            </div>
+                            <div class="swiper-slide s-4">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/2.webp" alt="">
+                            </div>
+                            <div class="swiper-slide s-4">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/3.webp" alt="">
+                            </div>
+                            <div class="swiper-slide s-4">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/4.webp" alt="">
+                            </div>
+                            <div class="swiper-slide s-4">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/5.webp" alt="">
+                            </div>
+                            <div class="swiper-slide s-4">
+                                <img src="https://moonlit-nextjs.netlify.app/assets/images/index-3/gallery/3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="h-[100%] w-[100%] bg-[#f1f1f1]">
+            <div class="h-[30%] w-[100%] flex">
+                <div class="w-[50%] h-[100%] flex justify-center items-center">
+                    <h1 class="text-6xl pl-10 pt-10 font-serif">Join Our Newsletter</h1>
+                </div>
+                <div class="w-[50%]  h-[100%] flex justify-center items-center pt-10">
+                    <input
+                        class="h-[40%] w-[70%] p-5  rounded border-[#ab8a62] text-[#65676b] bg-white shadow-2xl  rounded px-5 outline-none "
+                        type="text" placeholder="Enter your mail">
+                    <button
+                        class="w-[8%] h-[7%] border absolute right-30 bg-[#ab8a62] text-white rounded ">Subscribe</button>
+                </div>
+            </div>
+            <div class="h-[50%] w-[100%]  flex justify-around pl-20 pr-20">
+                <div class="w-[30%] h-[100%] flex flex-col justify-center items-start">
+                    <img src="https://moonlit-nextjs.netlify.app/assets/images/logo/logo.svg" alt="">
+                    <h1 class="text-lg pt-5 text-[#65676b]">Each room features plush bedding, high-quality linens, and a
+                        selection of ensure a restful night's sleep.</h1>
+                </div>
+                <div class="w-[20%] h-[100%]  flex flex-col justify-center">
+                    <h1 class="text-2xl pb-5">Quick Links</h1>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">Rooms & Suites</a>
+                    <a href="Dining" class=" text-[#65676b] pt-1 pb-1">Dining</a>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">Spa & Wellness</a>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">Special Offers</a>
+                </div>
+                <div class="w-[20%] h-[100%]  flex flex-col justify-center pt-7">
+                    <h1 class="text-2xl pb-5">Guest Service</h1>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">24/7 Front Desk</a>
+                    <a href="Dining" class=" text-[#65676b] pt-1 pb-1">Parking</a>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1"> Room Service</a>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">Free Wi-Fi</a>
+                    <a href="" class=" text-[#65676b] pt-1 pb-1">Concierge Service</a>
+                </div>
+                <div class="w-[20%] h-[100%]  flex pt-15 flex-col">
+                    <h1 class="text-2xl">Contact Us</h1>
+                    <div class="h-[20%] w-[100%] flex justify-start items-center">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <p class="pl-4 text-[#65676b]">+12505550199</p>
+                    </div>
+                    <div class="h-[20%] w-[100%]  flex justify-start items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="pl-4 text-[#65676b]">Moonlit@gmail.com</p>
+                    </div>
+                    <div class="h-[20%] w-[100%]  flex justify-start items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="pl-4 text-[#65676b]">M5T 2L9 Toronto, Canada</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[20%] w-[100%] border-t border-[#65676b] flex">
+                <div class="h-[100%] w-[50%]  flex justify-start items-center pl-23">
+                    <h1 class="text-[1.2vw]">Copyright © 2024 Moonlit. All rights reserved.</h1>
+                </div>
+                <div class="h-[100%] w-[50%]  flex justify-center items-center">
+                    <a href="" class="pr-5 pl-5 ">Facebook</a>
+                    <a href="" class="pr-5 pl-5 border-l-2 border-[#ab8a62]">LinkedIn</a>
+                    <a href="" class="pr-5 pl-5 border-l-2 border-[#ab8a62]">Twitter</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                prevEl: ".swiper-button-next",
+                nextEl: ".swiper-button-prev",
+            },
+            loop: true,
+            speed: 1200,
+            effect: "fade",
+        });
+    </script>
+    <script>
+        var swiperBottom = new Swiper(".mySwiperBottom", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".s-p",
+            },
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiperthird = new Swiper(".mySwiperthird", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+    </script>
+    <script>
+        var swiper_4 = new Swiper(".mySwiperfour", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
