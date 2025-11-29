@@ -1085,25 +1085,7 @@
             },
         });
     </script>
-    <script>
-        let scrollSpeed = 0.08; // 0.1 normal slow, 0.05 more slow, 0.02 super slow
 
-let scrollPos = window.scrollY;
-let targetPos = scrollPos;
-
-function smoothScroll() {
-    scrollPos += (targetPos - scrollPos) * scrollSpeed;
-    window.scrollTo(0, scrollPos);
-    requestAnimationFrame(smoothScroll);
-}
-smoothScroll();
-
-window.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    targetPos += e.deltaY;
-}, { passive: false });
-
-    </script>
 </body>
 
 </html>
